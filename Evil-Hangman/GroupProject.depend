@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1542351137 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\elcnotdatastructures\groupproject\main.cpp
+	"SDL_Plotter.h"
+	"alphabet.h"
+	<cstdlib>
+	<algorithm>
+
+1542347110 c:\users\jlui1\documents\baylor university\junior fall\data structures\elcnotdatastructures\groupproject\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
+1542329325 c:\users\jlui1\documents\baylor university\junior fall\data structures\elcnotdatastructures\groupproject\sdl_plotter1.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
+1542352412 c:\users\jlui1\documents\baylor university\junior fall\data structures\elcnotdatastructures\groupproject\alphabet.h
+	"SDL_Plotter.h"
+

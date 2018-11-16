@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="SDL_Plotter.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="276" />
+		</Cursor>
+	</File>
+	<File name="alphabet.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="54702" topLine="94" />
+		</Cursor>
+		<Folding>
+			<Collapse line="31" />
+			<Collapse line="57" />
+			<Collapse line="83" />
+			<Collapse line="109" />
+			<Collapse line="135" />
+			<Collapse line="161" />
+			<Collapse line="187" />
+			<Collapse line="213" />
+			<Collapse line="239" />
+			<Collapse line="265" />
+			<Collapse line="291" />
+			<Collapse line="317" />
+			<Collapse line="343" />
+			<Collapse line="369" />
+			<Collapse line="395" />
+			<Collapse line="421" />
+			<Collapse line="447" />
+			<Collapse line="473" />
+			<Collapse line="499" />
+			<Collapse line="525" />
+			<Collapse line="551" />
+			<Collapse line="577" />
+			<Collapse line="681" />
+			<Collapse line="708" />
+			<Collapse line="722" />
+			<Collapse line="736" />
+			<Collapse line="750" />
+			<Collapse line="764" />
+			<Collapse line="778" />
+			<Collapse line="792" />
+			<Collapse line="806" />
+			<Collapse line="820" />
+			<Collapse line="834" />
+			<Collapse line="848" />
+			<Collapse line="862" />
+			<Collapse line="876" />
+			<Collapse line="890" />
+			<Collapse line="904" />
+			<Collapse line="918" />
+			<Collapse line="932" />
+			<Collapse line="946" />
+			<Collapse line="960" />
+			<Collapse line="974" />
+			<Collapse line="988" />
+			<Collapse line="1002" />
+			<Collapse line="1016" />
+			<Collapse line="1030" />
+			<Collapse line="1044" />
+			<Collapse line="1058" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1951" topLine="80" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
