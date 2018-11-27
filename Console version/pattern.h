@@ -1,9 +1,5 @@
-//
-// Created by Xiang_Gao on 11/18/2018.
-//
-
-#ifndef GROUPROJECT_PATTERN_H
-#define GROUPROJECT_PATTERN_H
+#ifndef PATTERN_H_INCLUDED
+#define PATTERN_H_INCLUDED
 #include <iostream>
 #include <string>
 #include <vector>
@@ -11,6 +7,8 @@
 #include <algorithm>
 #include <time.h>
 #include <stdlib.h>
+
+
 using namespace std;
 //single pattern of  word list
 class patternWord{
@@ -47,4 +45,6 @@ public:
         length = 0;
     }
 };
-#endif //GROUPROJECT_PATTERN_H
+
+
+#endif // PATTERN_H_INCLUDED
