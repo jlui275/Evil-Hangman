@@ -1,6 +1,8 @@
 #include "SDL_Plotter.h"
 #include "alphabet.h"
 #include "stickFigure.h"
+#include "gallows.h"
+
 #include <cstdlib>
 #include <algorithm>
 
@@ -18,42 +20,7 @@ bool loadMedia();
 
 int main(int argc, char **argv) {
 	g = new SDL_Plotter(750,1000);
-/*    data = new int[g->getCol()];
-
-
-    for(int i =0; i < g->getCol(); i++){
-		data[i] = rand()%g->getCol();
-	}
-
-	while(!g->getQuit()){
-
-		if(g->kbhit()){
-			switch(g->getKey()){
-			    case 'B': BubbleSort();
-			              break;
-			    case 'R': RandomizeData();
-			              break;
-			    case 'S': SelectionSort();
-			              break;
-			    case 'I': InsertionSort();;
-			              break;
-			    case 'H': HeapSort();
-			              break;
-			    case 'Q': QuickSort(0, g->getCol());
-			              break;
-			    case 'M': MergeSort(0, g->getCol());
-			              break;
-			    case 'T': TRACE = !TRACE;
-			              break;
-			    case 'C': g->clear();
-			              break;
-			    case 'X': g->setQuit(true);
-			              break;
-			}
-		}
-		plotData();
-	}
-
+/*
     if( !init() )
     {
         printf( "Failed to initialize!\n" );
@@ -86,11 +53,17 @@ int main(int argc, char **argv) {
 
     while(!g->getQuit()){
         plotHead(g);
+        plotDeath(g);
         plotBody(g);
         plotLeftLeg(g);
         plotRightLeg(g);
         plotLeftArm(g);
         plotRightArm(g);
+
+        plotBase(g);
+        plotGallow(g);
+        plotGallow1(g);
+        plotGallow2(g);
 
         if(g->kbhit()){
 			switch(g->getKey()){
