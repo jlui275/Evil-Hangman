@@ -51,7 +51,11 @@ int main(int argc, char **argv) {
     }
     */
 
+    bool usedCharacters [26] = {0, 0, 0};
+
     while(!g->getQuit()){
+
+        plotAlphabet(g, usedCharacters);
         plotHead(g);
         plotDeath(g);
         plotBody(g);
