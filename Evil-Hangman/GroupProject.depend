@@ -26,3 +26,26 @@
 1542352412 c:\users\jlui1\documents\baylor university\junior fall\data structures\elcnotdatastructures\groupproject\alphabet.h
 	"SDL_Plotter.h"
 
+1543287182 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\main.cpp
+	"SDL_Plotter.h"
+	"alphabet.h"
+	"stickFigure.h"
+	<cstdlib>
+	<algorithm>
+
+1542347110 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
+1543282165 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\alphabet.h
+	"SDL_Plotter.h"
+
+1543287228 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\stickfigure.h
+	"SDL_Plotter.h"
+	<math.h>
+
