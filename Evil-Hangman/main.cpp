@@ -1,5 +1,6 @@
 #include "SDL_Plotter.h"
 #include "alphabet.h"
+#include "stickFigure.h"
 #include <cstdlib>
 #include <algorithm>
 
@@ -10,11 +11,7 @@ SDL_Surface* gScreenSurface = NULL;
 SDL_Surface* gHelloWorld = NULL;
 
 SDL_Plotter *g;
-int *data;
-const int SPEED = 0;
-bool TRACE = false;
 
-void plotData();
 bool init();
 bool loadMedia();
 
@@ -88,8 +85,12 @@ int main(int argc, char **argv) {
     */
 
     while(!g->getQuit()){
-
-        plotA(g);
+        plotHead(g);
+        plotBody(g);
+        plotLeftLeg(g);
+        plotRightLeg(g);
+        plotLeftArm(g);
+        plotRightArm(g);
 
         if(g->kbhit()){
 			switch(g->getKey()){
@@ -99,21 +100,6 @@ int main(int argc, char **argv) {
         }
     }
     return 0;
-}
-
-// main draw function, gets called over and over, as fast as possible
-void plotData(){
-	  if(!TRACE) g->clear();
-	  for(int i = 0; i < g->getCol();i++){
-		  g->plotPixel(i,data[i],0,0,0);
-
-		  if(i + 1 < g->getCol()) g->plotPixel(i+1,data[i],0,0,0);
-		  if(i - 1 >= 0) g->plotPixel(i-1,data[i],0,0,0);
-		  if(data[i] + 1 < g->getCol()) g->plotPixel(i,data[i]+1,0,0,0);
-		  if(data[i] - 1 >= 0)g->plotPixel(i,data[i]-1,0,0,0);
-	  }
-	  g->update();
-	  g->Sleep(SPEED);
 }
 
 /*
