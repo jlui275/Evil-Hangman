@@ -40,8 +40,8 @@ int main(int argv, char** args)
         drawRightPart(g,0);
         drawMessage(g,"start game ",50,300,255,0,0);
         drawMessage(g,"hit enter ",50,350,255,0,0);
-       // g->quitSound("end.wav");
-        g->initSound("background.wav");
+      //  g->quitSound("end.wav");
+
         g->playSound("background.wav");
         while(start){
         if(g->kbhit()){
@@ -253,9 +253,7 @@ int main(int argv, char** args)
             cout <<endl;
             cout <<endl;
         }
-        //g->quitSound("background.wav");
-        g->initSound("end.wav");
-        g->playSound("end.wav");
+
         bool gameContinue = false;
         drawMessage(g,"hit enter to continue" ,50,60,255,0,0);
         drawMessage(g,"hit q to quit" ,50,90,255,0,0);
@@ -268,6 +266,11 @@ int main(int argv, char** args)
                 }
                 else if (g->getKey() == 'Q'){
                     g->setQuit(true);
+                     gameContinue = true;
+                }
+                else if (g->getKey() == 'E'){
+                    g->quitSound("background.wav");
+        g->playSound("end.wav");
                 }
             }
         }
