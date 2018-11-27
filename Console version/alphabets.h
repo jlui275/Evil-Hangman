@@ -1271,43 +1271,43 @@ void plotAlphabet(SDL_Plotter *g){
     int offsetX = 50;
     int offsetY = 10;
     // First Row
-        plotA(g, 25 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotA(g, 45 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotB(g, 55 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotB(g, 75 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotC(g, 85 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotC(g, 105 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotD(g, 115 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotD(g, 135 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotE(g, 145 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotE(g, 165 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotF(g, 175 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotF(g, 195 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotG(g, 205 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotG(g, 225 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotH(g, 235 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotH(g, 255 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotI(g, 265 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotI(g, 285 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotJ(g, 295 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotJ(g, 315 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotK(g, 325 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotK(g, 345 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotL(g, 355 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotL(g, 375 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotM(g, 385 + offsetX, 600 - offsetY, 0, 255, 0);
+        plotM(g, 405 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
         plotN(g, 45 + offsetX, 650 - offsetY, 0, 255, 0);
@@ -1358,43 +1358,43 @@ void updateAlphabe(SDL_Plotter *g, vector<char> letterguessed){
     for (int i =0;i < letterguessed.size();i++){
         switch(letterguessed[i]){
         case 'a':
-            plotA(g, 25 + offsetX, 600 - offsetY, 255, 0, 0);
+            plotA(g, 45 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'b':
-             plotB(g, 55 + offsetX, 600 - offsetY, 255, 0, 0);
+             plotB(g, 75 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'c':
-            plotC(g, 85 + offsetX, 600 - offsetY, 255, 0, 0);
+            plotC(g, 105 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'd':
-            plotD(g, 115 + offsetX, 600 - offsetY, 255, 0, 0);
+            plotD(g, 135 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'e':
-              plotE(g, 145 + offsetX, 600 - offsetY, 255, 0, 0);
+              plotE(g, 165 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'f':
-             plotF(g, 175 + offsetX, 600 - offsetY, 255, 0, 0);
+             plotF(g, 195 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'g':
-             plotG(g, 205 + offsetX, 600 - offsetY, 255, 0, 0);
+             plotG(g, 225 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'h':
-            plotH(g, 235 + offsetX, 600 - offsetY, 255, 0, 0);
+            plotH(g, 255 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'i':
-           plotI(g, 265 + offsetX, 600 - offsetY, 255, 0, 0);
+           plotI(g, 285 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'j':
-             plotJ(g, 295 + offsetX, 600 - offsetY, 255, 0, 0);
+             plotJ(g, 315 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'k':
-            plotK(g, 325 + offsetX, 600 - offsetY, 255, 0, 0);
+            plotK(g, 345 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'l':
-             plotL(g, 355 + offsetX, 600 - offsetY, 255, 0, 0);
+             plotL(g, 375 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'm':
-            plotM(g, 385 + offsetX, 600 - offsetY, 255, 0, 0);
+            plotM(g, 405 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'n':
              plotN(g, 45 + offsetX, 650 - offsetY, 255, 0, 0);
@@ -1592,7 +1592,7 @@ void clearMessage(SDL_Plotter *g){
 void clearWord(SDL_Plotter *g){
        for(int i = 0; i < 50; i++)
     {
-        for(int j = 0; j < 600; j++)
+        for(int j = 0; j < 650; j++)
         {
            g->plotPixel(j + 0, i + 500, 255, 255, 255);
         }

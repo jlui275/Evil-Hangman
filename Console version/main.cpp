@@ -7,13 +7,14 @@
 #include <stdlib.h>
 #include "game.h"
 #include "SDL_Plotter.h"
-#include "alphabet.h"
+#include "alphabets.h"
 #include "stickFigure.h"
 #include "gallows.h"
 #include "answers.h"
 #include "sizeArray.h"
 using namespace std;
 //function used for get pattern of the word
+
 void drawRightPart(SDL_Plotter* g, int guess);
 void redrawBase(SDL_Plotter* g);
 int main(int argv, char** args)
@@ -32,6 +33,7 @@ int main(int argv, char** args)
     g->initSound("excellent.wav");
     g->initSound("error.wav");
     g->initSound("end.wav");
+    int loosetime = 0;
     while (!g->getQuit()){
 
         //start screen
@@ -42,7 +44,10 @@ int main(int argv, char** args)
         drawMessage(g,"hit enter ",50,350,255,0,0);
       //  g->quitSound("end.wav");
 
-        g->playSound("background.wav");
+        if(loosetime == 0){
+              g->playSound("background.wav");
+        }
+
         while(start){
         if(g->kbhit()){
             if(g->getKey() ==SDL_SCANCODE_RETURN){
@@ -245,7 +250,7 @@ int main(int argv, char** args)
             drawMessage(g,"you failed to guess the word" ,50,30,255,0,0);
              plotLetters(g,getCorrectSize(newgame->wordlength),newgame->getresult());
              clearWord(g);
-
+            loosetime++;
 
             cout << "the actual word  we have is " << newgame->getresult()<<endl;
             cout <<endl;
@@ -268,10 +273,11 @@ int main(int argv, char** args)
                     g->setQuit(true);
                      gameContinue = true;
                 }
-                else if (g->getKey() == 'E'){
-                    g->quitSound("background.wav");
+                if (loosetime == 3){
+                      g->quitSound("background.wav");
         g->playSound("end.wav");
                 }
+
             }
         }
     }
