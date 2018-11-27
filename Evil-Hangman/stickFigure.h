@@ -130,7 +130,7 @@ void plotRightLeg(SDL_Plotter *g)
     //position for body
     int x = xBodyLocation;
     int y = 600;
-    int x1, y1;
+    int y1;
 
     for(int i = 0; i < 100; i++)
     {
@@ -147,7 +147,7 @@ void plotLeftLeg(SDL_Plotter *g)
     //position for body
     int x = xBodyLocation;
     int y = 600;
-    int x1, y1;
+    int y1;
 
     for(int i = 0; i < 100; i++)
     {
@@ -164,7 +164,7 @@ void plotLeftArm(SDL_Plotter *g)
     //position for body
     int x = xBodyLocation;
     int y = 450;
-    int x1, y1;
+    int y1;
 
     for(int i = 0; i < 100; i++)
     {
@@ -181,7 +181,7 @@ void plotRightArm(SDL_Plotter *g)
     //position for body
     int x = xBodyLocation;
     int y = 450;
-    int x1, y1;
+    int y1;
 
     for(int i = 0; i < 100; i++)
     {
