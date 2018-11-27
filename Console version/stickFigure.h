@@ -8,7 +8,16 @@ void plotLeftArm(SDL_Plotter *g);
 void plotRightArm(SDL_Plotter *g);
 void plotLeftLeg(SDL_Plotter *g);
 void plotRightLeg(SDL_Plotter *g);
-static const int xBodyLocation = 625;
+
+static const int xBodyLocation = 675;
+
+/*
+ * description: Plots a circle of radius 100 for the head of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: A circle is plotted at the correct coordinates for the head
+ *
+*/
 
 void plotHead(SDL_Plotter *g)
 {
@@ -30,6 +39,14 @@ void plotHead(SDL_Plotter *g)
 
     g->update();
 }
+
+/*
+ * description: Plots a sad facial expression on the head of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: Sad facial expression is plotted to the SDL window
+ *
+*/
 
 void plotSadness(SDL_Plotter *g)
 {
@@ -70,6 +87,14 @@ void plotSadness(SDL_Plotter *g)
     g->update();
 }
 
+/*
+ * description: Plots a dead facial expression on the head of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: Dead facial expression is plotted to the SDL window
+ *
+*/
+
 void plotDeath(SDL_Plotter *g)
 {
     //plotting dead left eye
@@ -109,6 +134,14 @@ void plotDeath(SDL_Plotter *g)
     g->update();
 }
 
+/*
+ * description: Plots the body of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The body of the stick figure is plotted to the SDL window
+ *
+*/
+
 void plotBody(SDL_Plotter *g)
 {
     //position for body
@@ -123,6 +156,14 @@ void plotBody(SDL_Plotter *g)
 
     g->update();
 }
+
+/*
+ * description: Plots the right leg of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The right leg of the stick figure is plotted to the SDL window
+ *
+*/
 
 void plotRightLeg(SDL_Plotter *g)
 {
@@ -141,6 +182,14 @@ void plotRightLeg(SDL_Plotter *g)
     g->update();
 }
 
+/*
+ * description: Plots the left leg of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The left leg of the stick figure is plotted to the SDL window
+ *
+*/
+
 void plotLeftLeg(SDL_Plotter *g)
 {
     //position for body
@@ -157,6 +206,14 @@ void plotLeftLeg(SDL_Plotter *g)
 
     g->update();
 }
+
+/*
+ * description: Plots the left arm of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The left arm of the stick figure is plotted to the SDL window
+ *
+*/
 
 void plotLeftArm(SDL_Plotter *g)
 {
@@ -175,6 +232,14 @@ void plotLeftArm(SDL_Plotter *g)
     g->update();
 }
 
+/*
+ * description: Plots the right arm of the stick figure
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The right arm of the stick figure is plotted to the SDL window
+ *
+*/
+
 void plotRightArm(SDL_Plotter *g)
 {
     //position for body
@@ -191,4 +256,3 @@ void plotRightArm(SDL_Plotter *g)
 
     g->update();
 }
-

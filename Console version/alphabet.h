@@ -26,11 +26,12 @@ void plotW(SDL_Plotter *g, int, int, int, int, int);
 void plotX(SDL_Plotter *g, int, int, int, int, int);
 void plotY(SDL_Plotter *g, int, int, int, int, int);
 void plotZ(SDL_Plotter *g, int, int, int, int, int);
-
 void plotAlphabet(SDL_Plotter *g);
 void updateAlphabe(SDL_Plotter *g,vector<char> letterguessed);
-
-
+void drawMessage(SDL_Plotter *g,string message,int x,int y,int r,int gr,int b);
+void clearMessage(SDL_Plotter *g);
+void clearWord(SDL_Plotter *g);
+void plotLetters(SDL_Plotter *g, bool *sizeArray, string word);
 //Matrix for letters
 int aMatrix [25][25] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -1078,6 +1079,7 @@ void plotZ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
 }
 
 void plotAlphabet(SDL_Plotter *g){
+    int offsetY = 10;
     // First Row
         plotA(g, 25, 600, 0, 255, 0);
 
@@ -1240,3 +1242,238 @@ void updateAlphabe(SDL_Plotter *g, vector<char> letterguessed){
     }
 
 }
+void drawMessage(SDL_Plotter *g,string message,int x,int y,int r,int gr,int b){
+    for (int i = 0;i < message.length();i++){
+        switch(message[i]){
+        case 'a':
+            plotA(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'b':
+             plotB(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'c':
+            plotC(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'd':
+            plotD(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'e':
+              plotE(g, x, y, r, gr, b);
+               x+=30;
+            break;
+        case 'f':
+             plotF(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'g':
+             plotG(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'h':
+            plotH(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'i':
+           plotI(g, x, y, r, gr, b);
+            x+=30;
+            break;
+        case 'j':
+             plotJ(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'k':
+            plotK(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'l':
+             plotL(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'm':
+            plotM(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'n':
+             plotN(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'o':
+            plotO(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'p':
+            plotP(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'q':
+             plotQ(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 'r':
+             plotR(g, x, y, r, gr, b);
+              x+=30;
+            break;
+        case 's':
+            plotS(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 't':
+            plotT(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'u':
+            plotU(g, x, y, r, gr, b);
+            x+=30;
+            break;
+        case 'v':
+             plotV(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'w':
+             plotW(g, x, y, r, gr, b);
+             x+=30;
+            break;
+        case 'x':
+            plotX(g, x, y, r, gr, b);
+            x+=30;
+            break;
+        case 'y':
+            plotY(g, x, y, r, gr, b);
+            x+=30;
+            break;
+        case 'z':
+             plotZ(g, x, y, r, gr, b);
+             x+=30;
+        case ' ':
+             x+=15;
+            break;
+
+    }
+     g->update();
+    }
+}
+void clearMessage(SDL_Plotter *g){
+     for(int i = 0; i < 25; i++)
+    {
+        for(int j = 0; j < 1000; j++)
+        {
+           g->plotPixel(j + 50, i + 30, 255, 255, 255);
+        }
+    }
+    g->update();
+}
+void clearWord(SDL_Plotter *g){
+       for(int i = 0; i < 50; i++)
+    {
+        for(int j = 0; j < 600; j++)
+        {
+           g->plotPixel(j + 0, i + 500, 255, 255, 255);
+        }
+    }
+    g->update();
+
+}
+void plotLetters(SDL_Plotter *g, bool* sizeArray, string word)
+{
+    int y = 475;
+    int newChar = 5;
+    int j = 0;
+
+    for(int i = 0; i <= 21; i++)
+    {
+        if(sizeArray[i] == 1)
+        {
+            if(word[j] != '-')
+            {
+                switch(word[j]){
+                case 'a':
+                    plotA(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'b':
+                    plotB(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'c':
+                    plotC(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'd':
+                    plotD(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'e':
+                    plotE(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'f':
+                    plotF(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'g':
+                    plotG(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'h':
+                    plotH(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'i':
+                    plotI(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'j':
+                    plotJ(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'k':
+                    plotK(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'l':
+                    plotL(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'm':
+                    plotM(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'n':
+                    plotN(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'o':
+                    plotO(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'p':
+                    plotP(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'q':
+                    plotQ(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'r':
+                    plotR(g, newChar, y, 0, 0, 0);
+                    break;
+                case 's':
+                    plotS(g, newChar, y, 0, 0, 0);
+                    break;
+                case 't':
+                    plotT(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'u':
+                    plotU(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'v':
+                    plotV(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'w':
+                    plotW(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'x':
+                    plotX(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'y':
+                    plotY(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'z':
+                    plotZ(g, newChar, y, 0, 0, 0);
+                    break;
+                }
+            }
+            j++;
+        }
+        newChar += 30;
+    }
+    g->update();
+}
+
