@@ -42,7 +42,11 @@
 		</Linker>
 		<Unit filename="SDL_Plotter.h" />
 		<Unit filename="alphabet.h" />
+		<Unit filename="answers.h" />
+		<Unit filename="gallows.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="sizeArray.h" />
+		<Unit filename="stickFigure.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

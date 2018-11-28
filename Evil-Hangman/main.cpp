@@ -72,8 +72,11 @@ int main(int argc, char **argv) {
         plotGallow1(g);
         plotGallow2(g);
 
-        bool *sizeArray = getCorrectSize(18);
-        plotLine(g, 21, sizeArray);
+        bool *sizeArray = getCorrectSize(3);
+        plotLine(g, sizeArray);
+
+        string word = "ASS";
+        plotLetters(g, sizeArray, word);
 
         if(g->kbhit()){
 			switch(g->getKey()){
