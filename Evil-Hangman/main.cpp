@@ -2,6 +2,7 @@
 #include "alphabet.h"
 #include "stickFigure.h"
 #include "gallows.h"
+#include "sizeArray.h"
 
 #include <cstdlib>
 #include <algorithm>
