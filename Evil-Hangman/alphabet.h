@@ -604,8 +604,7 @@ int vMatrix [25][25] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-int wMatrix [25][25] = {
-    1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
+int wMatrix [25][25] = {1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
     1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
     1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
     1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
@@ -631,8 +630,7 @@ int wMatrix [25][25] = {
     0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0};
 
-int xMatrix [25][25] = {
-    0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0,
+int xMatrix [25][25] = {0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0,
     0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0,
     0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0,
     0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0,
@@ -658,9 +656,7 @@ int xMatrix [25][25] = {
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-
-int yMatrix [25][25] ={
-    0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+int yMatrix [25][25] = {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
     0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
     0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0,
     0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0,
@@ -1077,144 +1073,148 @@ void plotZ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+
+int offsetX = 50;
+int offsetY = 10;
+
 void plotAlphabet(SDL_Plotter *g, bool *array){
     // First Row
     if(array[0])
-        plotA(g, 25, 600, 255, 0, 0);
+        plotA(g, 45 + offsetX, 600 - offsetY, 255, 0, 0);
     else
-        plotA(g, 25, 600, 0, 255, 0);
+        plotA(g, 45 + offsetX, 600, 0, 255, 0);
 
     if(array[1])
-        plotB(g, 55, 600, 255, 0, 0);
+        plotB(g, 75 + offsetX, 600, 255, 0, 0);
     else
-        plotB(g, 55, 600, 0, 255, 0);
+        plotB(g, 75 + offsetX, 600, 0, 255, 0);
 
     if(array[2])
-        plotC(g, 85, 600, 255, 0, 0);
+        plotC(g, 105 + offsetX, 600, 255, 0, 0);
     else
-        plotC(g, 85, 600, 0, 255, 0);
+        plotC(g, 105 + offsetX, 600, 0, 255, 0);
 
     if(array[3])
-        plotD(g, 115, 600, 255, 0, 0);
+        plotD(g, 135 + offsetX, 600, 255, 0, 0);
     else
-        plotD(g, 115, 600, 0, 255, 0);
+        plotD(g, 135 + offsetX, 600, 0, 255, 0);
 
     if(array[4])
-         plotE(g, 145, 600, 255, 0, 0);
+        plotE(g, 165 + offsetX, 600, 255, 0, 0);
     else
-        plotE(g, 145, 600, 0, 255, 0);
+        plotE(g, 165 + offsetX, 600, 0, 255, 0);
 
     if(array[5])
-        plotF(g, 175, 600, 255, 0, 0);
+        plotF(g, 195 + offsetX, 600, 255, 0, 0);
     else
-        plotF(g, 175, 600, 0, 255, 0);
+        plotF(g, 195 + offsetX, 600, 0, 255, 0);
 
     if(array[6])
-        plotG(g, 205, 600, 255, 0, 0);
+        plotG(g, 225 + offsetX, 600, 255, 0, 0);
     else
-        plotG(g, 205, 600, 0, 255, 0);
+        plotG(g, 225 + offsetX, 600, 0, 255, 0);
 
     if(array[7])
-        plotH(g, 235, 600, 255, 0, 0);
+        plotH(g, 255 + offsetX, 600, 255, 0, 0);
     else
-        plotH(g, 235, 600, 0, 255, 0);
+        plotH(g, 255 + offsetX, 600, 0, 255, 0);
 
     if(array[8])
-        plotI(g, 265, 600, 255, 0, 0);
+        plotI(g, 285 + offsetX, 600, 255, 0, 0);
     else
-        plotI(g, 265, 600, 0, 255, 0);
+        plotI(g, 285 + offsetX, 600, 0, 255, 0);
 
     if(array[9])
-        plotJ(g, 295, 600, 255, 0, 0);
+        plotJ(g, 315 + offsetX, 600, 255, 0, 0);
     else
-        plotJ(g, 295, 600, 0, 255, 0);
+        plotJ(g, 315 + offsetX, 600, 0, 255, 0);
 
     if(array[10])
-         plotK(g, 325, 600, 255, 0, 0);
+        plotK(g, 345 + offsetX, 600, 255, 0, 0);
     else
-        plotK(g, 325, 600, 0, 255, 0);
+        plotK(g, 345 + offsetX, 600, 0, 255, 0);
 
     if(array[11])
-        plotL(g, 355, 600, 255, 0, 0);
+        plotL(g, 375 + offsetX, 600, 255, 0, 0);
     else
-        plotL(g, 355, 600, 0, 255, 0);
+        plotL(g, 375 + offsetX, 600, 0, 255, 0);
 
     if(array[12])
-        plotM(g, 385, 600, 255, 0, 0);
+        plotM(g, 405 + offsetX, 600, 255, 0, 0);
     else
-        plotM(g, 385, 600, 0, 255, 0);
+        plotM(g, 405 + offsetX, 600, 0, 255, 0);
 
     if(array[13])
-        plotN(g, 45, 650, 255, 0, 0);
+        plotN(g, 45 + offsetX, 650, 255, 0, 0);
     else
-        plotN(g, 45, 650, 0, 255, 0);
+        plotN(g, 45 + offsetX, 650, 0, 255, 0);
 
     if(array[14])
-        plotO(g, 75, 650, 255, 0, 0);
+        plotO(g, 75 + offsetX, 650, 255, 0, 0);
     else
-        plotO(g, 75, 650, 0, 255, 0);
+        plotO(g, 75 + offsetX, 650, 0, 255, 0);
 
     if(array[15])
-        plotP(g, 105, 650, 255, 0, 0);
+        plotP(g, 105 + offsetX, 650, 255, 0, 0);
     else
-        plotP(g, 105, 650, 0, 255, 0);
+        plotP(g, 105 + offsetX, 650, 0, 255, 0);
 
     if(array[16])
-        plotQ(g, 135, 650, 255, 0, 0);
+        plotQ(g, 135 + offsetX, 650, 255, 0, 0);
     else
-        plotQ(g, 135, 650, 0, 255, 0);
+        plotQ(g, 135 + offsetX, 650, 0, 255, 0);
 
     if(array[17])
-        plotR(g, 165, 650, 255, 0, 0);
+        plotR(g, 165 + offsetX, 650, 255, 0, 0);
     else
-        plotR(g, 165, 650, 0, 255, 0);
+        plotR(g, 165 + offsetX, 650, 0, 255, 0);
 
     if(array[18])
-        plotS(g, 195, 650, 255, 0, 0);
+        plotS(g, 195 + offsetX, 650, 255, 0, 0);
     else
-        plotS(g, 195, 650, 0, 255, 0);
+        plotS(g, 195 + offsetX, 650, 0, 255, 0);
 
     if(array[19])
-        plotT(g, 225, 650, 255, 0, 0);
+        plotT(g, 225 + offsetX, 650, 255, 0, 0);
     else
-        plotT(g, 225, 650, 0, 255, 0);
+        plotT(g, 225 + offsetX, 650, 0, 255, 0);
 
     if(array[20])
-        plotU(g, 255, 650, 255, 0, 0);
+        plotU(g, 255 + offsetX, 650, 255, 0, 0);
     else
-        plotU(g, 255, 650, 0, 255, 0);
+        plotU(g, 255 + offsetX, 650, 0, 255, 0);
 
     if(array[21])
-        plotV(g, 285, 650, 255, 0, 0);
+        plotV(g, 285 + offsetX, 650, 255, 0, 0);
     else
-        plotV(g, 285, 650, 0, 255, 0);
+        plotV(g, 285 + offsetX, 650, 0, 255, 0);
 
     if(array[22])
-        plotW(g, 315, 650, 255, 0, 0);
+        plotW(g, 315 + offsetX, 650, 255, 0, 0);
     else
-        plotW(g, 315, 650, 0, 255, 0);
+        plotW(g, 315 + offsetX, 650, 0, 255, 0);
 
     if(array[23])
-        plotX(g, 345, 650, 255, 0, 0);
+        plotX(g, 345 + offsetX, 650, 255, 0, 0);
     else
-        plotX(g, 345, 650, 0, 255, 0);
+        plotX(g, 345 + offsetX, 650, 0, 255, 0);
 
     if(array[24])
-        plotY(g, 375, 650, 255, 0, 0);
+        plotY(g, 375 + offsetX, 650, 255, 0, 0);
     else
-        plotY(g, 375, 650, 0, 255, 0);
+        plotY(g, 375 + offsetX, 650, 0, 255, 0);
 
     if(array[25])
-        plotZ(g, 415, 650, 255, 0, 0);
+        plotZ(g, 415 + offsetX, 650, 255, 0, 0);
     else
-        plotZ(g, 415, 650, 0, 255, 0);
+        plotZ(g, 415 + offsetX, 650 + offsetY, 0, 255, 0);
 
     g->update();
     g->Sleep(0);
 }
 
 
-void updateAlphabe(char c, bool *array){
+void updateAlphabet(char c, bool *array){
     switch(c){
         case 'A':
             array[0] = 1;

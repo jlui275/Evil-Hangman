@@ -9,7 +9,7 @@ void plotRightArm(SDL_Plotter *g);
 void plotLeftLeg(SDL_Plotter *g);
 void plotRightLeg(SDL_Plotter *g);
 
-static const int xBodyLocation = 625;
+static const int xBodyLocation = 675;
 
 void plotHead(SDL_Plotter *g)
 {
