@@ -2,11 +2,8 @@
 #include "alphabet.h"
 #include "stickFigure.h"
 #include "gallows.h"
-<<<<<<< HEAD
 #include "sizeArray.h"
-=======
 #include "answers.h"
->>>>>>> a4091ccf6518ecee3b4eca5148dccdd43300207f
 
 #include <cstdlib>
 #include <algorithm>
@@ -75,7 +72,7 @@ int main(int argc, char **argv) {
         plotGallow1(g);
         plotGallow2(g);
 
-        bool sizeArray [21] = {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
+        bool *sizeArray = getCorrectSize(18);
         plotLine(g, 21, sizeArray);
 
         if(g->kbhit()){
