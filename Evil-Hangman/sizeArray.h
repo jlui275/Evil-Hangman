@@ -2,9 +2,7 @@
 
 
 bool* getCorrectSize(int x){
-    
-    bool *boolArray[21];
-    
+
     static bool  a1[21] = {0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0};
     static bool  a2[21] = {0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0};
     static bool  a3[21] = {0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0};
@@ -26,9 +24,9 @@ bool* getCorrectSize(int x){
     static bool a19[21] = {0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0};
     static bool a20[21] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0};
     static bool a21[21] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
-    
-    
-    
+
+
+
     switch(x){
         case 1:
             return a1;
@@ -94,6 +92,5 @@ bool* getCorrectSize(int x){
             return a21;
             break;
     }
-    
-    return boolArray[6];
+    return a21;
 }

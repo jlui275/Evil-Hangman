@@ -28,7 +28,9 @@ void plotY(SDL_Plotter *g, int, int, int, int, int);
 void plotZ(SDL_Plotter *g, int, int, int, int, int);
 
 void plotAlphabet(SDL_Plotter *g, bool*);
-void updateAlphabe(char, bool*);
+void updateAlphabet(char, bool*);
+
+void plotLetters(SDL_Plotter *g, bool *sizeArray, string word);
 
 
 //Matrix for letters
@@ -1073,11 +1075,9 @@ void plotZ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
-
-int offsetX = 50;
-int offsetY = 10;
-
 void plotAlphabet(SDL_Plotter *g, bool *array){
+    int offsetX = 50;
+    int offsetY = 10;
     // First Row
     if(array[0])
         plotA(g, 45 + offsetX, 600 - offsetY, 255, 0, 0);
@@ -1213,7 +1213,6 @@ void plotAlphabet(SDL_Plotter *g, bool *array){
     g->Sleep(0);
 }
 
-
 void updateAlphabet(char c, bool *array){
     switch(c){
         case 'A':
@@ -1296,3 +1295,104 @@ void updateAlphabet(char c, bool *array){
             break;
     }
 }
+
+void plotLetters(SDL_Plotter *g, bool* sizeArray, string word)
+{
+    int y = 475;
+    int newChar = 5;
+    int j = 0;
+
+    for(int i = 0; i <= 21; i++)
+    {
+        if(sizeArray[i] == 1)
+        {
+            if(word[j] != '-')
+            {
+                switch(word[j]){
+                case 'A':
+                    plotA(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'B':
+                    plotB(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'C':
+                    plotC(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'D':
+                    plotD(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'E':
+                    plotE(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'F':
+                    plotF(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'G':
+                    plotG(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'H':
+                    plotH(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'I':
+                    plotI(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'J':
+                    plotJ(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'K':
+                    plotK(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'L':
+                    plotL(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'M':
+                    plotM(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'N':
+                    plotN(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'O':
+                    plotO(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'P':
+                    plotP(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'Q':
+                    plotQ(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'R':
+                    plotR(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'S':
+                    plotS(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'T':
+                    plotT(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'U':
+                    plotU(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'V':
+                    plotV(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'W':
+                    plotW(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'X':
+                    plotX(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'Y':
+                    plotY(g, newChar, y, 0, 0, 0);
+                    break;
+                case 'Z':
+                    plotZ(g, newChar, y, 0, 0, 0);
+                    break;
+                }
+            }
+            j++;
+        }
+        newChar += 30;
+    }
+    g->update();
+}
+

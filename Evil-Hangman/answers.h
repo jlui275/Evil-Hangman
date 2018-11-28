@@ -1,10 +1,9 @@
 #include "SDL_Plotter.h"
 
-void plotLine(SDL_Plotter *g, int length);
+void plotLine(SDL_Plotter *g, bool *sizeArray);
 
-void plotLine(SDL_Plotter *g, int length, bool *sizeArray)
+void plotLine(SDL_Plotter *g, bool *sizeArray)
 {
-
     int y = 500;
     int newChar = 5;
 
