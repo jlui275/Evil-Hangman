@@ -2,7 +2,11 @@
 #include "alphabet.h"
 #include "stickFigure.h"
 #include "gallows.h"
+<<<<<<< HEAD
 #include "sizeArray.h"
+=======
+#include "answers.h"
+>>>>>>> a4091ccf6518ecee3b4eca5148dccdd43300207f
 
 #include <cstdlib>
 #include <algorithm>
@@ -52,7 +56,12 @@ int main(int argc, char **argv) {
     }
     */
 
+    bool usedCharacters [26] = {0, 0, 0};
+
     while(!g->getQuit()){
+
+        plotAlphabet(g, usedCharacters);
+
         plotHead(g);
         plotDeath(g);
         plotBody(g);
@@ -66,9 +75,12 @@ int main(int argc, char **argv) {
         plotGallow1(g);
         plotGallow2(g);
 
+        bool sizeArray [21] = {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
+        plotLine(g, 21, sizeArray);
+
         if(g->kbhit()){
 			switch(g->getKey()){
-			    case 'Q': g->setQuit(true);
+			    case 'ESC': g->setQuit(true);
                             break;
 			}
         }
@@ -77,34 +89,6 @@ int main(int argc, char **argv) {
 }
 
 /*
-void plotA(){
-    if(!TRACE) g-> clear();
-    for(int i = 1; i <= 25; i++)
-    {
-        g->plotPixel(i, ((g->getRow() - 2*i) - 1), 255, 0, 0);
-        g->plotPixel(i, (g->getRow() - 2*i), 255, 0, 0);
-        g->plotPixel(i, ((g->getRow() - 2*i) + 1), 255, 0, 0);
-    }
-
-    int j = 0;
-    for(int i = 25; i >= 1; i--)
-    {
-        g->plotPixel(i+j, (g->getRow() - 2*i) - 1, 255, 0, 0);
-        g->plotPixel(i+j, g->getRow() - 2*i, 255, 0, 0);
-        g->plotPixel(i+j, (g->getRow() - 2*i) + 1, 255, 0, 0);
-        j += 2;
-    }
-
-    for(int i = 10; i < 40; i++)
-    {
-        g->plotPixel(i, (g->getRow() - 16) - 1, 255, 0, 0);
-        g->plotPixel(i, g->getRow() - 16, 255, 0, 0);
-        g->plotPixel(i, (g->getRow() - 16) + 1, 255, 0, 0);
-    }
-
-    g->update();
-    g->Sleep(SPEED);
-}
 
 bool init()
 {

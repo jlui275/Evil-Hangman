@@ -44,22 +44,19 @@ void game::getword(istream &in) {
     }
 }
 // this method read in current guess
-void game::inputchar() {
-    bool inputsuccess = false;
-    char key;
-    while(!inputsuccess){
-        cin >> key;
-        inputsuccess = true;
+bool game::inputchar(char key) {
+    bool inputsuccess = true;
+    key += 32;
         for (int i = 0; i < letterguessed.size();i++){
             if (key == letterguessed[i]){
                 inputsuccess = false;
                 cout << "you already guessed this key" << endl;
             }
         }
-    }
     if (inputsuccess){
         letterguessed.push_back(key);
     }
+    return inputsuccess;
 }
 //check if there is - in solution
 bool game::checkfinished() {
@@ -97,62 +94,14 @@ void game::calulateDiffculty() {
     }
 
 }
-//get set of the word with specific length
-void game::getset() {
-    bool findlength = false;
-    while(!findlength){
-        cout <<"choose the length of the word"<< endl;
-        cin >> wordlength;
-        for (int j = 0; j < totalword.size();j++){
-            if ( wordlength ==  totalword[j].length){
-                wordlist = totalword[j].list;
-                findlength = true;
-            }
-        }
-        if (!findlength){
-            cout << " we dont have word this length" << endl;
-        }
-    }
-    cout <<"choose how many guess you want have" << endl;
-    cin >> remainguess;
-    solution = "";
-    for (int i =0;i < wordlength;i++){
-        solution += '-';
-    }
 
-}
 //get the current result
 string game::getresult() {
     srand(time(NULL));
     int randnum = rand()%(wordlist.size());
-    cout <<"random numer" << randnum << endl;
     return wordlist[randnum];
 }
-//let the game run
-void game::gamerun(istream &in) {
-    //read in and partion word based on length
-    this->getword(in);
-    //get the word length and change the current list to word with that size
-    this->getset();
-    this->calulateDiffculty();
-    cout << "current Solution is " << solution << endl;
-    cout << "remaining guess is " << remainguess << endl;
-    bool guesscorrect = false;
-    while (!this->checkfinished() && remainguess > 0) {
-        this->inputchar();
-        guesscorrect = this->updateSol();
-        //cout << "you guessed this"<< letterguessed.back() <<endl;
-        cout << "current Solution is " << solution << endl;
-        if (!guesscorrect) {
-            remainguess--;
-        }
-
-        cout << "remaining guess is " << remainguess << endl;
-    }
-    if (this->checkfinished() == true) {
-        cout << "you successfully find the word" << endl;
-    } else {
-        cout << "you failed guess the word" << endl;
-        cout << "the actual word  we have is " << this->getresult()<<endl;
-    }
+void game::gamereset() {
+    this->letterguessed.clear();
+    this->remainguess = 6;
 }

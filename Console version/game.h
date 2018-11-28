@@ -1,10 +1,5 @@
-//
-// Created by Xiang_Gao on 11/18/2018.
-//
-
-#ifndef GROUPROJECT_GAME_H
-#define GROUPROJECT_GAME_H
-
+#ifndef GAME_H_INCLUDED
+#define GAME_H_INCLUDED
 #include <iostream>
 #include <string>
 #include <vector>
@@ -15,7 +10,7 @@
 #include "pattern.h"
 using namespace std;
 class game{
-private:
+public:
     vector<string> wordlist;
     vector<wordLength> totalword;
     bool updateSol();
@@ -24,17 +19,18 @@ private:
     vector<char> letterguessed;
     void getword(istream& in);
     bool checkfinished();
-    void getset();
     void calulateDiffculty();
-public:
     string solution;
     game(){
         solution = "----";
         wordlength = 4;
-        remainguess = 10;
+        remainguess = 6;
     }
-    void inputchar();
-    void gamerun(istream& in);
+    bool inputchar(char key);
+    //void gamerun(istream& in);
     string getresult();
+    void gamereset();
 };
-#endif //GROUPROJECT_GAME_H
+
+
+#endif // GAME_H_INCLUDED

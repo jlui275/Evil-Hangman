@@ -22,7 +22,7 @@ void plotBase(SDL_Plotter *g)
 
 void plotGallow(SDL_Plotter *g)
 {
-    int x = 900;
+    int x = 850;
     int y = 725;
 
     for(int i = 0; i < 650; i++)
@@ -36,7 +36,7 @@ void plotGallow(SDL_Plotter *g)
 
 void plotGallow1(SDL_Plotter *g)
 {
-    int x = 900;
+    int x = 850;
     int y = 75;
 
     for(int i = 0; i < 225; i++)
@@ -50,7 +50,7 @@ void plotGallow1(SDL_Plotter *g)
 
 void plotGallow2(SDL_Plotter *g)
 {
-    int x = 675;
+    int x = 625;
     int y = 75;
 
     for(int i = 0; i < 75; i++)

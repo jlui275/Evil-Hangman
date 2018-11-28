@@ -26,11 +26,12 @@
 1542352412 c:\users\jlui1\documents\baylor university\junior fall\data structures\elcnotdatastructures\groupproject\alphabet.h
 	"SDL_Plotter.h"
 
-1543293851 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\main.cpp
+1543380612 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\main.cpp
 	"SDL_Plotter.h"
 	"alphabet.h"
 	"stickFigure.h"
 	"gallows.h"
+	"answers.h"
 	<cstdlib>
 	<algorithm>
 
@@ -43,13 +44,16 @@
 	<string.h>
 	<map>
 
-1543294914 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\alphabet.h
+1543381470 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\alphabet.h
 	"SDL_Plotter.h"
 
-1543294980 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\stickfigure.h
+1543380245 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\stickfigure.h
 	"SDL_Plotter.h"
 	<math.h>
 
-1543292790 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\gallows.h
+1543380231 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\gallows.h
+	"SDL_Plotter.h"
+
+1543380557 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\evil-hangman\answers.h
 	"SDL_Plotter.h"
 

@@ -73,7 +73,6 @@ patternWord pattern::Maxset() {
     }
     srand(time(NULL));
     int randnum = rand()%(Maxindex+1);
-    cout <<"random numer" << randnum << endl;
     swap(patterns[0],patterns[randnum]);
     return patterns[0];
 }
