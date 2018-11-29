@@ -12,33 +12,33 @@
 	<stdlib.h>
 	"pattern.h"
 
-1501426541 c:\mingw\include\time.h
+1512587389 c:\mingw\include\time.h
 	<sys/types.h>
 	<_mingw.h>
 	<stddef.h>
 
-1501426541 c:\mingw\include\sys\types.h
+1512587389 c:\mingw\include\sys\types.h
 	<_mingw.h>
 	<stddef.h>
 
-1501426541 c:\mingw\include\_mingw.h
+1512587389 c:\mingw\include\_mingw.h
 	<msvcrtver.h>
 	<w32api.h>
 
-1501426541 c:\mingw\include\msvcrtver.h
+1512587389 c:\mingw\include\msvcrtver.h
 	<_mingw.h>
 
-1501426555 c:\mingw\include\w32api.h
+1512587401 c:\mingw\include\w32api.h
 	<sdkddkver.h>
 
-1501426555 c:\mingw\include\sdkddkver.h
+1512587401 c:\mingw\include\sdkddkver.h
 
-1501426541 c:\mingw\include\stdlib.h
+1512587389 c:\mingw\include\stdlib.h
 	<_mingw.h>
 	<stddef.h>
 	<locale.h>
 
-1501426541 c:\mingw\include\locale.h
+1512587389 c:\mingw\include\locale.h
 	<_mingw.h>
 	<stddef.h>
 
@@ -160,7 +160,7 @@
 
 1540998544 c:\mingw\include\sdl2\close_code.h
 
-1501426541 c:\mingw\include\stdio.h
+1512587389 c:\mingw\include\stdio.h
 	<_mingw.h>
 	<stddef.h>
 	"sys/types.h"
@@ -174,18 +174,18 @@
 1501426541 c:\mingw\include\memory.h
 	<string.h>
 
-1501426541 c:\mingw\include\string.h
+1512587389 c:\mingw\include\string.h
 	<_mingw.h>
 	<stddef.h>
 	<strings.h>
 	"strings.h"
 	"wchar.h"
 
-1501426541 c:\mingw\include\strings.h
+1512587389 c:\mingw\include\strings.h
 	<_mingw.h>
 	<stddef.h>
 
-1501426541 c:\mingw\include\wchar.h
+1512587389 c:\mingw\include\wchar.h
 	<_mingw.h>
 	<wctype.h>
 	<sys/types.h>
@@ -198,29 +198,29 @@
 	"locale.h"
 	"process.h"
 
-1501426541 c:\mingw\include\wctype.h
+1512587389 c:\mingw\include\wctype.h
 	<_mingw.h>
 	<stddef.h>
 
-1501426541 c:\mingw\include\direct.h
+1512587389 c:\mingw\include\direct.h
 	"dos.h"
 
-1501426541 c:\mingw\include\dos.h
+1512587389 c:\mingw\include\dos.h
 	"io.h"
 
-1501426541 c:\mingw\include\io.h
+1512587389 c:\mingw\include\io.h
 	<_mingw.h>
 	<sys/types.h>
 	"stdint.h"
 
-1501426541 c:\mingw\include\stdint.h
+1512587389 c:\mingw\include\stdint.h
 	<_mingw.h>
 	<stddef.h>
 
-1501426541 c:\mingw\include\sys\stat.h
+1512587389 c:\mingw\include\sys\stat.h
 	<sys/types.h>
 
-1501426541 c:\mingw\include\process.h
+1512587389 c:\mingw\include\process.h
 	<_mingw.h>
 	<sys/types.h>
 	"stdint.h"
@@ -234,7 +234,7 @@
 	<_mingw.h>
 	"wctype.h"
 
-1501426541 c:\mingw\include\math.h
+1512587389 c:\mingw\include\math.h
 	<_mingw.h>
 
 1501426541 c:\mingw\include\float.h
@@ -528,4 +528,70 @@
 
 1543348565 e:\document\c\evilhangman\sizearray.h
 	"SDL_Plotter.h"
+
+1543380890 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\game.cpp
+	"game.h"
+
+1543380890 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\game.h
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<algorithm>
+	<time.h>
+	<stdlib.h>
+	"pattern.h"
+
+1543380890 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\pattern.h
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<algorithm>
+	<time.h>
+	<stdlib.h>
+
+1543464477 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<algorithm>
+	<time.h>
+	<stdlib.h>
+	"game.h"
+	"SDL_Plotter.h"
+	"alphabet.h"
+	"stickFigure.h"
+	"gallows.h"
+	"answers.h"
+	"sizeArray.h"
+
+1543380890 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\sdl_plotter.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+	<string.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+
+1543465469 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\alphabet.h
+	"SDL_Plotter.h"
+
+1543464477 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\stickfigure.h
+	"SDL_Plotter.h"
+	<math.h>
+
+1543464477 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\gallows.h
+	"SDL_Plotter.h"
+
+1543464477 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\answers.h
+	"SDL_Plotter.h"
+
+1543464477 c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\sizearray.h
+	"SDL_Plotter.h"
+
+1543380890 source:c:\users\jlui1\documents\baylor university\junior fall\data structures\evil hangman\console version\pattern.cpp
+	"pattern.h"
 

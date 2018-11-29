@@ -16,9 +16,32 @@ public:
     bool updateSol();
     int wordlength;
     int remainguess;
+
+
     vector<char> letterguessed;
+
+    //**************************************
+    // Description: Get word
+    // Pre-Condition: game instance exists
+    // Post-Condition: word from i stream is got
+    // Return: void
+    //**************************************
     void getword(istream& in);
+
+    //**************************************
+    // Description: Checks to see if the process is finished
+    // Pre-Condition: game instance exists
+    // Post-Condition: check if process is finished.
+    // Return: bool
+    //**************************************
     bool checkfinished();
+
+    //**************************************
+    // Description: Sets difficulty
+    // Pre-Condition: Game instance exists
+    // Post-Condition: difficulty is changed
+    // Return: void
+    //**************************************
     void calulateDiffculty();
     string solution;
     game(){

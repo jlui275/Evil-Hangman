@@ -16,7 +16,21 @@ public:
     vector<string> list;
     string pat;
     int count;
+
+    //**************************************
+    // Description: Will print the word
+    // Pre-Condition: Game instance exists
+    // Post-Condition: Word is printed
+    // Return: void
+    //**************************************
     void printword();
+
+    //**************************************
+    // Description: Updates the Counter
+    // Pre-Condition: Counter and game instance exists
+    // Post-Condition: counter is updated
+    // Return: void
+    //**************************************
     void updateCounter(){
         count++;
     }
@@ -31,9 +45,37 @@ private:
     vector<string> wordlist;
 public:
     vector<patternWord> patterns;
+
+    //**************************************
+    // Description: Read the word from the word vector
+    // Pre-Condition: game instance exists
+    // Post-Condition: word is read
+    // Return: void
+    //**************************************
     void readword(vector<string> word);
+
+    //**************************************
+    // Description: Read word and partition into patters
+    // Pre-Condition: char must be entered
+    // Post-Condition: game instance exists
+    // Return: void
+    //**************************************
     void getPatterns(char key);
+
+    //**************************************
+    // Description: Prints patterns
+    // Pre-Condition: game instance exists
+    // Post-Condition: pattern is printed
+    // Return: void
+    //**************************************
     void printpattern();
+
+    //**************************************
+    // Description: update current pattern
+    // Pre-Condition: game instance exists
+    // Post-Condition: current pattern is updated
+    // Return: void
+    //**************************************
     void updatepattern();
     patternWord Maxset();
 };
