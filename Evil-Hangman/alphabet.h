@@ -1375,7 +1375,7 @@ void plotAlphabet(SDL_Plotter *g, bool *array){
 }
 
 //******************************
-// Description: Aphabet array is updated if the character is input
+// Description: Alphabet array is updated if the character is input
 // Return: void
 // Precondition: Alphabet Matrix Exists
 // Postcondition: array is updated
