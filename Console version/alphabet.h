@@ -714,6 +714,13 @@ int zMatrix [25][25] = {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 //Function to Plot Letters
+
+//******************************
+// Description: Plots letter A
+// Return: void
+// Precondition: A Matrix Exists
+// Postcondition: A is plotter
+//*******************************
 void plotA(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -727,6 +734,13 @@ void plotA(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter B
+// Return: void
+// Precondition: B Matrix Exists
+// Postcondition: B is plotter
+//*******************************
 
 void plotB(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -742,6 +756,13 @@ void plotB(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter C
+// Return: void
+// Precondition: C Matrix Exists
+// Postcondition: C is plotter
+//*******************************
+
 void plotC(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -755,6 +776,13 @@ void plotC(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter D
+// Return: void
+// Precondition: D Matrix Exists
+// Postcondition: D is plotter
+//*******************************
 
 void plotD(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -770,6 +798,13 @@ void plotD(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter E
+// Return: void
+// Precondition: E Matrix Exists
+// Postcondition: E is plotter
+//*******************************
+
 void plotE(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -783,6 +818,13 @@ void plotE(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter F
+// Return: void
+// Precondition: F Matrix Exists
+// Postcondition: F is plotter
+//*******************************
 
 void plotF(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -798,6 +840,13 @@ void plotF(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter G
+// Return: void
+// Precondition: G Matrix Exists
+// Postcondition: G is plotter
+//*******************************
+
 void plotG(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -811,6 +860,13 @@ void plotG(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter H
+// Return: void
+// Precondition: H Matrix Exists
+// Postcondition: H is plotter
+//*******************************
 
 void plotH(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -826,6 +882,13 @@ void plotH(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter I
+// Return: void
+// Precondition: I Matrix Exists
+// Postcondition: I is plotter
+//*******************************
+
 void plotI(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -839,6 +902,13 @@ void plotI(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter J
+// Return: void
+// Precondition: J Matrix Exists
+// Postcondition: J is plotter
+//*******************************
 
 void plotJ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -854,6 +924,13 @@ void plotJ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter K
+// Return: void
+// Precondition: K Matrix Exists
+// Postcondition: K is plotter
+//*******************************
+
 void plotK(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -867,6 +944,13 @@ void plotK(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter L
+// Return: void
+// Precondition: L Matrix Exists
+// Postcondition: L is plotter
+//*******************************
 
 void plotL(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -882,6 +966,13 @@ void plotL(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter M
+// Return: void
+// Precondition: M Matrix Exists
+// Postcondition: M is plotter
+//*******************************
+
 void plotM(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -895,6 +986,13 @@ void plotM(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter N
+// Return: void
+// Precondition: N Matrix Exists
+// Postcondition: N is plotter
+//*******************************
 
 void plotN(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -910,6 +1008,13 @@ void plotN(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter O
+// Return: void
+// Precondition: O Matrix Exists
+// Postcondition: O is plotter
+//*******************************
+
 void plotO(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -923,6 +1028,13 @@ void plotO(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter P
+// Return: void
+// Precondition: P Matrix Exists
+// Postcondition: P is plotter
+//*******************************
 
 void plotP(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -938,6 +1050,13 @@ void plotP(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter Q
+// Return: void
+// Precondition: Q Matrix Exists
+// Postcondition: Q is plotter
+//*******************************
+
 void plotQ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -951,6 +1070,13 @@ void plotQ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter R
+// Return: void
+// Precondition: R Matrix Exists
+// Postcondition: R is plotter
+//*******************************
 
 void plotR(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -966,6 +1092,13 @@ void plotR(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter S
+// Return: void
+// Precondition: S Matrix Exists
+// Postcondition: S is plotter
+//*******************************
+
 void plotS(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -979,6 +1112,13 @@ void plotS(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter T
+// Return: void
+// Precondition: T Matrix Exists
+// Postcondition: T is plotter
+//*******************************
 
 void plotT(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -994,6 +1134,13 @@ void plotT(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter U
+// Return: void
+// Precondition: U Matrix Exists
+// Postcondition: U is plotter
+//*******************************
+
 void plotU(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -1007,6 +1154,13 @@ void plotU(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter V
+// Return: void
+// Precondition: V Matrix Exists
+// Postcondition: V is plotter
+//*******************************
 
 void plotV(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -1022,6 +1176,13 @@ void plotV(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter W
+// Return: void
+// Precondition: W Matrix Exists
+// Postcondition: W is plotter
+//*******************************
+
 void plotW(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -1035,6 +1196,13 @@ void plotW(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter X
+// Return: void
+// Precondition: X Matrix Exists
+// Postcondition: X is plotter
+//*******************************
 
 void plotX(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -1050,6 +1218,13 @@ void plotX(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: Plots letter Y
+// Return: void
+// Precondition: Y Matrix Exists
+// Postcondition: Y is plotter
+//*******************************
+
 void plotY(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
     {
@@ -1063,6 +1238,13 @@ void plotY(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     }
     g->update();
 }
+
+//******************************
+// Description: Plots letter Z
+// Return: void
+// Precondition: Z Matrix Exists
+// Postcondition: Z is plotter
+//*******************************
 
 void plotZ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     for(int i = 0; i < 25; i++)
@@ -1078,170 +1260,194 @@ void plotZ(SDL_Plotter *g, int x, int y, int r, int gr, int b){
     g->update();
 }
 
+//******************************
+// Description: The keyboard will be plotted, with the correct colors
+// Return: void
+// Precondition: alphabet matrixes exist, SDL Plotter exists
+// Postcondition: The aplhabet is plotted
+//*******************************
+
 void plotAlphabet(SDL_Plotter *g){
+    int offsetX = 50;
     int offsetY = 10;
     // First Row
-        plotA(g, 25, 600, 0, 255, 0);
+        plotA(g, 25 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotB(g, 55, 600, 0, 255, 0);
+        plotB(g, 55 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotC(g, 85, 600, 0, 255, 0);
+        plotC(g, 85 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotD(g, 115, 600, 0, 255, 0);
+        plotD(g, 115 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotE(g, 145, 600, 0, 255, 0);
+        plotE(g, 145 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotF(g, 175, 600, 0, 255, 0);
+        plotF(g, 175 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotG(g, 205, 600, 0, 255, 0);
+        plotG(g, 205 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotH(g, 235, 600, 0, 255, 0);
+        plotH(g, 235 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotI(g, 265, 600, 0, 255, 0);
+        plotI(g, 265 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotJ(g, 295, 600, 0, 255, 0);
+        plotJ(g, 295 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotK(g, 325, 600, 0, 255, 0);
+        plotK(g, 325 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotL(g, 355, 600, 0, 255, 0);
+        plotL(g, 355 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotM(g, 385, 600, 0, 255, 0);
+        plotM(g, 385 + offsetX, 600 - offsetY, 0, 255, 0);
 
 
-        plotN(g, 45, 650, 0, 255, 0);
+        plotN(g, 45 + offsetX, 650 - offsetY, 0, 255, 0);
 
 
-        plotO(g, 75, 650, 0, 255, 0);
+        plotO(g, 75 + offsetX, 650 - offsetY, 0, 255, 0);
 
 
-        plotP(g, 105, 650, 0, 255, 0);
+        plotP(g, 105 + offsetX, 650 - offsetY, 0, 255, 0);
 
 
-        plotQ(g, 135, 650, 0, 255, 0);
+        plotQ(g, 135 + offsetX, 650 - offsetY, 0, 255, 0);
 
-        plotR(g, 165, 650, 0, 255, 0);
-
-
-        plotS(g, 195, 650, 0, 255, 0);
+        plotR(g, 165 + offsetX, 650 - offsetY, 0, 255, 0);
 
 
-        plotT(g, 225, 650, 0, 255, 0);
+        plotS(g, 195 + offsetX, 650 - offsetY, 0, 255, 0);
 
-        plotU(g, 255, 650, 0, 255, 0);
 
-        plotV(g, 285, 650, 0, 255, 0);
+        plotT(g, 225 + offsetX, 650 - offsetY, 0, 255, 0);
 
-        plotW(g, 315, 650, 0, 255, 0);
+        plotU(g, 255 + offsetX, 650 - offsetY, 0, 255, 0);
 
-        plotX(g, 345, 650, 0, 255, 0);
+        plotV(g, 285 + offsetX, 650 - offsetY, 0, 255, 0);
 
-        plotY(g, 375, 650, 0, 255, 0);
+        plotW(g, 315 + offsetX, 650 - offsetY, 0, 255, 0);
 
-        plotZ(g, 415, 650, 0, 255, 0);
+        plotX(g, 345 + offsetX, 650 - offsetY, 0, 255, 0);
+
+        plotY(g, 375 + offsetX, 650 - offsetY, 0, 255, 0);
+
+        plotZ(g, 415 + offsetX, 650 - offsetY, 0, 255, 0);
 
     g->update();
     g->Sleep(0);
 }
 
+//******************************
+// Description: Alphabet array is updated if the character is input
+// Return: void
+// Precondition: Alphabet Matrix Exists
+// Postcondition: array is updated
+//*******************************
 
 void updateAlphabe(SDL_Plotter *g, vector<char> letterguessed){
+    int offsetX = 50;
+    int offsetY = 10;
     for (int i =0;i < letterguessed.size();i++){
         switch(letterguessed[i]){
         case 'a':
-            plotA(g, 25, 600, 255, 0, 0);
+            plotA(g, 25 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'b':
-             plotB(g, 55, 600, 255, 0, 0);
+             plotB(g, 55 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'c':
-            plotC(g, 85, 600, 255, 0, 0);
+            plotC(g, 85 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'd':
-            plotD(g, 115, 600, 255, 0, 0);
+            plotD(g, 115 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'e':
-              plotE(g, 145, 600, 255, 0, 0);
+              plotE(g, 145 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'f':
-             plotF(g, 175, 600, 255, 0, 0);
+             plotF(g, 175 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'g':
-             plotG(g, 205, 600, 255, 0, 0);
+             plotG(g, 205 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'h':
-            plotH(g, 235, 600, 255, 0, 0);
+            plotH(g, 235 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'i':
-           plotI(g, 265, 600, 255, 0, 0);
+           plotI(g, 265 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'j':
-             plotJ(g, 295, 600, 255, 0, 0);
+             plotJ(g, 295 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'k':
-            plotK(g, 325, 600, 255, 0, 0);
+            plotK(g, 325 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'l':
-             plotL(g, 355, 600, 255, 0, 0);
+             plotL(g, 355 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'm':
-            plotM(g, 385, 600, 255, 0, 0);
+            plotM(g, 385 + offsetX, 600 - offsetY, 255, 0, 0);
             break;
         case 'n':
-             plotN(g, 45, 650, 255, 0, 0);
+             plotN(g, 45 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'o':
-            plotO(g, 75, 650, 255, 0, 0);
+            plotO(g, 75 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'p':
-            plotP(g, 105, 650, 255, 0, 0);
+            plotP(g, 105 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'q':
-             plotQ(g, 135, 650, 255, 0, 0);
+             plotQ(g, 135 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'r':
-             plotR(g, 165, 650, 255, 0, 0);
+             plotR(g, 165 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 's':
-            plotS(g, 195, 650, 255, 0, 0);
+            plotS(g, 195 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 't':
-            plotT(g, 225, 650, 255, 0, 0);
+            plotT(g, 225 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'u':
-            plotU(g, 255, 650, 255, 0, 0);
+            plotU(g, 255 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'v':
-             plotV(g, 285, 650, 255, 0, 0);
+             plotV(g, 285 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'w':
-             plotW(g, 315, 650, 255, 0, 0);
+             plotW(g, 315 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'x':
-            plotX(g, 345, 650, 255, 0, 0);
+            plotX(g, 345 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'y':
-            plotY(g, 375, 650, 255, 0, 0);
+            plotY(g, 375 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
         case 'z':
-             plotZ(g, 415, 650, 255, 0, 0);
+             plotZ(g, 415 + offsetX, 650 - offsetY, 255, 0, 0);
             break;
     }
     g->update();
     }
 
 }
+
+//******************************
+// Description: Message will be drawn to the screen
+// Return: void
+// Precondition: SDL Plotter object exists
+// Postcondition: The message is plotted
+//*******************************
+
 void drawMessage(SDL_Plotter *g,string message,int x,int y,int r,int gr,int b){
     for (int i = 0;i < message.length();i++){
         switch(message[i]){
@@ -1356,6 +1562,15 @@ void drawMessage(SDL_Plotter *g,string message,int x,int y,int r,int gr,int b){
      g->update();
     }
 }
+
+
+//******************************
+// Description: Clears the message
+// Return: void
+// Precondition: SDL Plotter object exists
+// Postcondition: The message is cleared from the screen
+//*******************************
+
 void clearMessage(SDL_Plotter *g){
      for(int i = 0; i < 25; i++)
     {
@@ -1366,6 +1581,14 @@ void clearMessage(SDL_Plotter *g){
     }
     g->update();
 }
+
+//******************************
+// Description: Clears the word
+// Return: void
+// Precondition: SDL Plotter object exists
+// Postcondition: The word is cleared from the screen
+//*******************************
+
 void clearWord(SDL_Plotter *g){
        for(int i = 0; i < 50; i++)
     {
@@ -1377,6 +1600,14 @@ void clearWord(SDL_Plotter *g){
     g->update();
 
 }
+
+//******************************
+// Description: Plots letter on lines
+// Return: void
+// Precondition: alphabet matrix and sdl plotter exit
+// Postcondition: character is plotted
+//*******************************
+
 void plotLetters(SDL_Plotter *g, bool* sizeArray, string word)
 {
     int y = 475;
