@@ -2,6 +2,14 @@
 
 void plotLine(SDL_Plotter *g, bool *sizeArray);
 
+/*
+ * description: Plots the lines for each letter to rest on
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The lines for each letter is plotted to the SDL window
+ *
+*/
+
 void plotLine(SDL_Plotter *g, bool *sizeArray)
 {
     int y = 500;

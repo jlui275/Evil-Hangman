@@ -1,5 +1,16 @@
 #include "SDL_Plotter.h"
 
+/*
+ * description: Returns the array of the lines needed for specific lengths of
+ *              words. If a word of length 6 is being guessed, the array a6
+ *              should be passed so then the correct number of lines will be
+ *              plotted.
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The correct array is returned which will specify the lines
+ *                that need to be plotted
+ *
+*/
 
 bool* getCorrectSize(int x){
 

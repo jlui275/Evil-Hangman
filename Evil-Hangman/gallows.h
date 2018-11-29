@@ -6,6 +6,14 @@ void plotGallow(SDL_Plotter *g);
 void plotGallow1(SDL_Plotter *g);
 void plotGallow2(SDL_Plotter *g);
 
+/*
+ * description: Plots the base of the gallow
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The base of the gallow is plotted to the SDL window
+ *
+*/
+
 void plotBase(SDL_Plotter *g)
 {
     int x = 525;
@@ -19,6 +27,14 @@ void plotBase(SDL_Plotter *g)
 
     g->update();
 }
+
+/*
+ * description: Plots the upright of the gallow
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The upright of the gallow is plotted to the SDL window
+ *
+*/
 
 void plotGallow(SDL_Plotter *g)
 {
@@ -34,6 +50,14 @@ void plotGallow(SDL_Plotter *g)
     g->update();
 }
 
+/*
+ * description: Plots the overhang of the gallow
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The overhang of the gallow is plotted to the SDL window
+ *
+*/
+
 void plotGallow1(SDL_Plotter *g)
 {
     int x = 900;
@@ -47,6 +71,14 @@ void plotGallow1(SDL_Plotter *g)
 
     g->update();
 }
+
+/*
+ * description: Plots the rope of the gallow
+ * return: void
+ * precondition: SDL Plotter object is valid
+ * postcondition: The rope of the gallow is plotted to the SDL window
+ *
+*/
 
 void plotGallow2(SDL_Plotter *g)
 {
