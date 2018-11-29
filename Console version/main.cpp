@@ -1,3 +1,19 @@
+/*
+ * Data Abstraction:
+ * 		Output to SDL window. Multiple class object is enabled
+ * Input:
+ * 		The program reads input from the user keyboard
+ * Process:
+ * 		The program will read in all the world form the word list ,and ask user to choose a length.
+ *      Than it will take all the word will that length. Than each time user type a new character
+ *      current  world list is divided in to different pattern group. Than the program continue progress
+ *      the biggest
+ * Output:
+ * 		Current guessed word, and solution is print on SDLwindow
+ * Assumptions:
+ * 		It is assumed that user did not type a number in main game stage
+ */
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -15,7 +31,22 @@
 using namespace std;
 //function used for get pattern of the word
 
+/*
+ * description: draw right part of the body
+ * return: noun
+ * precondition: number of guess and SDL_Plotter
+ * postcondition: returns sum of price and tax
+ *
+*/
 void drawRightPart(SDL_Plotter* g, int guess);
+
+/*
+ * description: redraw base graphic
+ * return: noun
+ * precondition: noun
+ * postcondition: clear screen and redraw part
+ *
+*/
 void redrawBase(SDL_Plotter* g);
 int main(int argv, char** args)
 {
